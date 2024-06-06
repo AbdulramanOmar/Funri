@@ -1,0 +1,101 @@
+.contact {
+  padding-bottom: 50px;
+  background-color: #eff2f1;
+}
+.contact .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contact-content {
+  width: 70%;
+  margin: auto;
+}
+.contact-content .contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-content .contact-icons div {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.contact-content .contact-icons svg {
+  font-size: 40px;
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: white;
+}
+.contact-content .contact-icons span {
+  margin-left: 10px;
+  font-size: 13px;
+  color: var(--text-color);
+}
+.contact-content form {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.contact-content form input,
+textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 13px 18px;
+  border-radius: 10px;
+}
+.contact-content form > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.contact-content form button {
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 32px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width:991px) {
+  .contact-content .contact-icons {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+.cart-tatol h2 {
+  border-bottom: 1px solid #c0c0c0;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.cart-tatol h5 {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size:  25px;
+}
+.cart-tatol span {
+  color: gold;
+  margin-left: 30px;
+}
+.cart-tatol button {
+  display: block;
+  padding: 12px 18px;
+  font-size: 26px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid #eff2f1 !important;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cart-tatol button:hover {
+  background-color: #eff2f1;
+  color: var(--main-color);
+  border: 1px solid var(--main-color) !important;
+}

@@ -1,0 +1,19 @@
+.carts table {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.carts table thead td {
+    border-bottom: 1px solid rgba(189, 189, 189, 0.404);
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.carts table tbody td {
+    padding: 10px 0 ;
+}
+.carts table tbody td img {
+    width: 100px;
+    color:rgb(251, 127, 127)
+}

@@ -1,0 +1,35 @@
+
+.service-box {
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.service-box h5 {
+    color: var(--head-color) ;
+    margin: 5px 0;
+}
+.service-box p {
+    color: var(--text-color);
+
+}
+.service span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #3b5d5087;
+    border-radius: 50%;
+    top: 20px;
+    left: 21px;
+    z-index: 1;
+    transition: 0.5s;
+}
+@media (max-width:991px) {
+    .service span {
+        left: 53%;
+        top: 20%;
+        transform: translate(-50%,-50%);
+    }
+    .service {
+        text-align: center;
+    }
+}

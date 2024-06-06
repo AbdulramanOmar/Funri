@@ -1,0 +1,96 @@
+.material {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  overflow: hidden;
+}
+.material .material-text h3 {
+  font-size: 44px;
+  text-transform: capitalize;
+  color: var(--head-color);
+}
+.material .material-text p {
+  line-height: 1.6;
+  margin: 20px 0;
+  color: var(--text-color);
+}
+.material .material-text button {
+  padding: 13px 20px;
+  border-radius: 41px;
+  border: none;
+  font-size: 20px;
+  margin: 0 7px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  transition: 0.3s;
+}
+.material .material-text button:hover {
+  background-color: white;
+  color: black;
+}
+.material .material-card {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.material .material-card .img {
+  width: 300px;
+}
+.material .material-card img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.material .material-card h2 {
+  color: var(--head-color);
+  margin: 10px 0;
+}
+.material .material-card::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 50%;
+  top: 0;
+  right: 0;
+  background: #e4e4e4;
+  z-index: -1;
+  transition: 0.5s
+}
+.material .material-card::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background: #e4e4e4;
+  z-index: -1;
+  transition: 0.5s
+}
+.material .material-card:hover::after {
+  width: 100%;
+}
+.material .material-card:hover::before {
+  width: 100%;
+}
+.material .material-card:hover img {
+  transform: scale(1.07);
+}
+.material .material-card p {
+  color: var(--yellow-color);
+  margin: 20px 0;
+}
+@media (max-width: 767px) {
+  .material {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 20px;
+  }
+  .material .material-card .img {
+    width: 230px !important;
+    margin: auto;
+  }
+}

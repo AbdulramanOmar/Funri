@@ -1,0 +1,78 @@
+.cards {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 20px;
+}
+.card {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.card .img {
+  width: 300px;
+}
+.card img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.card h2 {
+  color: var(--head-color);
+  margin: 10px 0;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 50%;
+  top: 0;
+  right: 0;
+  background: #e4e4e4;
+  z-index: -1;
+  transition: 0.5s;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background: #e4e4e4;
+  z-index: -1;
+  transition: 0.5s;
+}
+.card:hover::after {
+  width: 100%;
+}
+.card:hover::before {
+  width: 100%;
+}
+.card:hover img {
+  transform: scale(1.07);
+}
+.card p {
+  color: var(--yellow-color);
+  margin: 20px 0;
+}
+@media (max-width: 767px) {
+  .cards .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 20px;
+  }
+  .card .img {
+    width: 230px !important;
+    margin: auto;
+  }
+}
+
+
+.disable {
+  cursor:not-allowed ;
+  user-select: none;
+}

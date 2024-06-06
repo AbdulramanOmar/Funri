@@ -1,0 +1,51 @@
+:root {
+  --main-color: #3b5d50;
+  --yellow-color: #f9bf29;
+  --text-color: #6a6a6a;
+  --head-color:#2f2f2f ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+.home {
+  background-color: #eff2f1;
+  overflow: hidden;
+}
